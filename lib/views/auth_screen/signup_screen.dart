@@ -6,8 +6,15 @@ import 'package:emart_app/widgets_common/our_button.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_navigation/get_navigation.dart';
 
-class SignupScreen extends StatelessWidget {
+class SignupScreen extends StatefulWidget {
   const SignupScreen({Key? key}) : super(key: key);
+  @override
+  State<SignupScreen> createState() => _SignupScreenState();
+}
+
+class _SignupScreenState extends State<SignupScreen> {
+  bool? isCheck = false;
+
   @override
   Widget build(BuildContext context) {
     return bgWidget(
@@ -61,8 +68,12 @@ class SignupScreen extends StatelessWidget {
               children: [
                 Checkbox(
                     checkColor: redColor,
-                    value: false,
-                    onChanged: (newValue) {}),
+                    value: isCheck,
+                    onChanged: (newValue) {
+                      setState(() {
+                        isCheck = newValue;
+                      });
+                    }),
                 10.widthBox,
                 Expanded(
                     child: RichText(
