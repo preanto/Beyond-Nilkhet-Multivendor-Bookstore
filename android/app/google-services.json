@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "335337286968",
+    "project_id": "beyond-nilkhet",
+    "storage_bucket": "beyond-nilkhet.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:335337286968:android:deb59f0ed9ffe10fd3e5cd",
+        "android_client_info": {
+          "package_name": "com.example.emart_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCuOEby2y2LLb7Vnju7tSJLQjpVGmwoIpE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

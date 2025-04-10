@@ -1,9 +1,22 @@
 import 'package:emart_app/views/splash_screen/splash_screen.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'consts/consts.dart';
 
-void main() {
+import 'package:firebase_core/firebase_core.dart';
+
+void main(dynamic DefaultFirebaseOptions) async {
+  WidgetsFlutterBinding.ensureInitialized();
+
+  try {
+    await Firebase.initializeApp(
+      options: DefaultFirebaseOptions.currentPlatform,
+    );
+  } catch (e) {
+    print("Firebase initialization error: $e");
+  }
+
   runApp(const MyApp());
 }
 
