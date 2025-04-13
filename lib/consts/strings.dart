@@ -30,4 +30,21 @@ const searchanything = "Search Anything...",
     topSellers = "Top Sellers",
     brand = "Brand",
     topCategories = "Top Categories",
-    featuredCategories = "Featured Categories";
+    featuredCategories = "Featured Categories",
+    horrorbook = "horror books",
+    novels = "novels",
+    funny = "funny",
+    romantic = "romantic",
+    featuredProduct = "Feature Product",
+    thriller = "thrillers";
+
+//category strings
+const funnyCat = "Funny",
+    historyCat = "History",
+    educationCat = "Education",
+    novelCat = "Novel",
+    thrillerCat = "Thriller",
+    horrorCat = "Horror",
+    abcCat = "Abc",
+    bcdCat = "BCD",
+    efgCat = "efg";
